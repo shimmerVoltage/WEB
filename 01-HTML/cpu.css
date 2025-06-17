@@ -1,0 +1,31 @@
+﻿body
+{
+    background-color: #323232;
+    color: gray;
+    /*font-family:'Segoe UI';*/
+    font-family: 'Roboto Condensed';
+}
+h4
+{
+    text-align:right;
+    font-family: 'Roboto Condensed';
+}
+p
+{
+    text-align:justify;
+    font-size:14pt;
+    font-family: 'Roboto Condensed';
+}
+ol
+{
+    list-style-type:upper-roman;
+    /*list-style-type:upper-alpha;*/
+}
+.nesting-lvl-1
+{
+    list-style-type:circle;
+}
+.nesting-lvl-2
+{
+    list-style-type:"- ";
+}
