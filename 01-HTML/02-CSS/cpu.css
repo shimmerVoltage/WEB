@@ -123,3 +123,19 @@ div
 	margin-top:22px;
 	margin-bottom:32px;*/
 }
+
+table:hover
+{
+    box-shadow: 0px 0px 25px 25px lightgrey;
+    /*box-shadow: 10px 10px 10px 10px grey;*/
+}
+
+tr:hover
+{
+    box-shadow: inset 0px -5px 5px green;
+}
+
+td:hover
+{
+    box-shadow: initial 0 5px 5px blue;
+}
