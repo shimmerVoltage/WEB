@@ -30,8 +30,34 @@
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" />
             </div>
+            <div>
+                <label for="phone-number">Номер телефона</label>
+                <input type="tel" id="phone-number" placeholder="+7(XXX) XXX-XX-XX" name="phone-number" pattern=""
+                       />
+            </div>
+            <div>
+                <label for="birth-date">Дата рождения: </label>
+                <input type="date" id="birth-date" name="birth-date" min="1950-01-01" 
+            max="2011-01-01"/>
+            </div>
+            <div>
+                <label for="brief">Пару слов о себе:</label><br />
+                <textarea id="brief" name="brief" placeholder="Писать по Русски"></textarea>
+            </div>
+            <div>
+                <img width="150" height="200"/><br>
+                <label for="photo" id="photo">Выберите фоточку</label><br>
+                <input type="file" id="photo" name="photo" />
+            </div>
+            <div>
+                <label for="color" id="color">Ваш любимый цвет</label>
+                <input type="color" id="color" name="color" />
+            </div>
             <input type="submit" value="Отправить">
         </form>
     </main>
 </body>
 </html>
+<!--
+    P@$$W0rd
+-->
