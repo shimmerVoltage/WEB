@@ -9,3 +9,25 @@ body
 {
     font-family: Roboto Condensed;
 }
+textarea
+{
+    resize: none;
+    width: 500px;
+    height: 150px;
+}
+fieldset
+{
+    width: 474px;
+}
+.EULA
+{
+    width: 500px;
+    height: 200px;
+    border: solid 1px;
+    overflow: scroll;
+    text-align: justify;
+}
+div
+{
+    margin: 25px;
+}
