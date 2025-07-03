@@ -66,12 +66,19 @@
 {
     /*border-color:lightgray;*/
     background-image:linear-gradient(to bottom right, #75C1FF, #2045D5);
+    box-shadow: inset 0px 0px 3px 3px #5781F5;
+}
+.control_button:active
+{
+    /*border-color:lightgray;*/
+    background-image:linear-gradient(to bottom right, #55A1CF, #0025B5);
     box-shadow: inset 0px 0px 3px 3px #77A1F5;
 }
     .control_button:disabled, .control_button:disabled:hover
     {
         color: lightgray;
         border-color: lightgray;
+
     }
 #close_button
 {
@@ -82,6 +89,11 @@
     {
         background-image: linear-gradient(to bottom right, #D98485, #FF3020);
         box-shadow: inset 0px 0px 3px 3px #C49A9B;
+    }
+    #close_button:active
+    {
+        background-image: linear-gradient(to bottom right, #D95455, #FF3020);
+        box-shadow: inset 0px 0px 3px 3px #B4848B;
     }
 
 /*--------------------------------------------*/
@@ -116,4 +128,47 @@
     width: 5px;
     height: 320px;
     background-image: linear-gradient(to right, #001177CC, #0055BBFF, #001177CC);
+}
+
+/*------------------------------------------------------------------*/
+
+#work-area
+{
+    width:95%;
+    display:block;
+}
+.menu-bar, .display, .buttons
+{
+    width:100%;
+}
+.menu-bar
+{
+    display:flex;
+    justify-content:left;
+}
+    .menu-bar > button
+    {
+        width: 50px;
+        height: 22px;
+        margin: 1px;
+        background: rgb(236,233,216);
+        border:none;
+    }
+    .menu-bar > button:hover
+    {
+        box-shadow:1px 1px 0 0 grey;
+        background: rgb(246,243,226);
+    }
+        .menu-bar > button:active
+        {
+            box-shadow: inset 1px 1px 0 0 grey;
+            background: rgb(226,223,206);
+        }
+#text
+{
+    width:98%;
+}
+input[type=text]
+{
+    text-align:right;
 }
