@@ -83,3 +83,37 @@
         background-image: linear-gradient(to bottom right, #D98485, #FF3020);
         box-shadow: inset 0px 0px 3px 3px #C49A9B;
     }
+
+/*--------------------------------------------*/
+
+.client-rect
+{
+    width: auto;
+    height: 312px;
+    display: block;
+}
+#main-area
+{
+    display:flex;
+    justify-content:space-between;
+}
+#bottom-border
+{
+    width:100%;
+    height:5px;
+    background-color:darkblue;
+    background-image: linear-gradient(to right/*, #001177CC*/, #0055BBFF, #001177CC);
+}
+#left-border
+{
+    width: 5px;
+    height: 320px;
+    /*background-color: darkblue;*/
+    background-image: linear-gradient(to right, #0022BBFF, #0055FFFF, #0022BBFF);
+}
+#right-border
+{
+    width: 5px;
+    height: 320px;
+    background-image: linear-gradient(to right, #001177CC, #0055BBFF, #001177CC);
+}
