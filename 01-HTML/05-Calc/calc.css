@@ -13,7 +13,8 @@
     align-self:center;
     width:400px;
     height:360px;
-    background:rgb(236,233,216);
+    /*background:rgb(236,233,216);*/
+    background:#ffbb00;
     border-top-left-radius:5px;
     border-top-right-radius:5px;
 }
@@ -179,17 +180,40 @@ input[type=text]
 }
 .buttons
 {
-    display:flex;
-    justify-content:left;
+    display: flex;
+    justify-content: left;
+    
 }
     .buttons button
     {
-        width:50px;
-        height:40px;
+        width: 50px;
+        height: 40px;
         margin: 5px 10px;
-        /*border:solid 1px darkblue;
-        border-radius:5px;*/
+        /*border:solid 1px darkblue;*/
+        /*border-radius:5px;*/
+        background: linear-gradient(to bottom, #f9f9f9 0%, #e5e5e5 100%);
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        /*box-shadow: 1px 1px 1px rgba(255,255,255,0.8) inset, 0 1px 2px rgba(0,0,0,0.2);*/
+        box-shadow: 1px 1px 1px rgb(255,255,255,4) inset, 0 1px 2px rgba(80,0,255,1);
+        cursor: pointer;
+        /*outline: none;*/
     }
+
+        .buttons button:hover
+        {
+            /*background: linear-gradient(to bottom, #f3f3f3 0%, #e1e1e1 100%);*/
+            background: linear-gradient(to bottom, #FF3020 0%, #00ff0a 100%);
+        }
+
+        .buttons button:active
+        {
+            /*box-shadow: 1px 1px 2px rgba(0,0,0,0.2) inset, 0 1px 0 rgba(255,255,255,0.8);*/
+            box-shadow: 1px 1px 2px rgba(0,255,100,2) inset, 0 1px 0 rgba(255,225,0,1);
+            /*background: #e5e5e5;*/
+            background: #ff00f5;
+        }       
+
 .memory-buttons
 {
     /*border: solid 1px;*/
@@ -231,4 +255,5 @@ input[type=text]
     .digit-buttons button
     {
         color:darkblue;
+        
     }
