@@ -189,9 +189,21 @@ input[type=text]
         width: 50px;
         height: 40px;
         margin: 5px;
-        /*border:solid 1px darkblue;
-        border-radius:5px;*/
+
+        border:solid 1px darkblue;
+        border-radius:5px;
+        box-shadow: inset 0px -3px 5px 1px lightgrey;
     }      
+
+    .buttons button:hover
+    {
+        background-color: lightgray;
+        box-shadow:inset 0px 0px 2px 2px #FFAA00;
+    }
+    .buttons button:active
+    {
+        box-shadow:inset 0px 0px 0px 1px grey;
+    }
 
 .memory-buttons
 {    
@@ -200,7 +212,7 @@ input[type=text]
     grid-template-rows: 40px 40px 40px 40px;
     grid-gap:10px;  
 }
-    .memory-buttons > button
+    .memory-buttons > button, .operational-buttons > button
     {
         color:red;
     }
