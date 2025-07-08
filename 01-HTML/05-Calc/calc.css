@@ -13,8 +13,8 @@
     align-self:center;
     width:400px;
     height:360px;
-    /*background:rgb(236,233,216);*/
-    background:#ffbb00;
+    background:rgb(236,233,216);
+    /*background:#ffbb00;*/
     border-top-left-radius:5px;
     border-top-right-radius:5px;
 }
@@ -188,40 +188,17 @@ input[type=text]
     {
         width: 50px;
         height: 40px;
-        margin: 5px 10px;
-        /*border:solid 1px darkblue;*/
-        /*border-radius:5px;*/
-        background: linear-gradient(to bottom, #f9f9f9 0%, #e5e5e5 100%);
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        /*box-shadow: 1px 1px 1px rgba(255,255,255,0.8) inset, 0 1px 2px rgba(0,0,0,0.2);*/
-        box-shadow: 1px 1px 1px rgb(255,255,255,4) inset, 0 1px 2px rgba(80,0,255,1);
-        cursor: pointer;
-        /*outline: none;*/
-    }
-
-        .buttons button:hover
-        {
-            /*background: linear-gradient(to bottom, #f3f3f3 0%, #e1e1e1 100%);*/
-            background: linear-gradient(to bottom, #FF3020 0%, #00ff0a 100%);
-        }
-
-        .buttons button:active
-        {
-            /*box-shadow: 1px 1px 2px rgba(0,0,0,0.2) inset, 0 1px 0 rgba(255,255,255,0.8);*/
-            box-shadow: 1px 1px 2px rgba(0,255,100,2) inset, 0 1px 0 rgba(255,225,0,1);
-            /*background: #e5e5e5;*/
-            background: #ff00f5;
-        }       
+        margin: 5px;
+        /*border:solid 1px darkblue;
+        border-radius:5px;*/
+    }      
 
 .memory-buttons
-{
-    /*border: solid 1px;*/
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-   
-    margin: 1px 0 0 0;
+{    
+    display:grid;
+    grid-template-columns: 50px;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-gap:10px;  
 }
     .memory-buttons > button
     {
@@ -240,10 +217,19 @@ input[type=text]
 {
     margin: 5px;    
 }
+.wide-buttons
+{
+    margin: 0 15px;
+}
 .wide-buttons > button
 {
     width:85px;
     color:red;
+}
+.digits-and-operations
+{
+    display:flex;
+    justify-content:left;
 }
 .digit-buttons
 {
@@ -251,9 +237,20 @@ input[type=text]
     grid-template-columns: 50px 50px 50px;
     grid-template-rows: 40px 40px 40px 40px;
     grid-gap: 10px;
+    /*margin: 0 15px;*/
+    margin-left:10px;
 }
     .digit-buttons button
     {
-        color:darkblue;
-        
+        color:darkblue;        
     }
+
+.operational-buttons, .results
+{
+    display:grid;
+    grid-template-columns:50px;
+    grid-template-rows:40px 40px 40px 40px;
+    grid-gap:10px;
+    margin-left:10px;
+    /*margin:0 15px;*/
+}
