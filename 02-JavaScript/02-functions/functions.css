@@ -61,3 +61,10 @@ img[src='img/sun.png']
         background-image: url('img/sun.png');
         filter: brightness(0) invert(1);
     }
+
+#photo-container
+{
+    border:solid 1px;
+    width:400px;
+    height:400px;
+}

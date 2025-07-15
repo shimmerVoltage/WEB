@@ -32,3 +32,19 @@ function SwitchBackground()
     document.getElementById('switchBackground').style.transition = `background-image ${delay}s`;
     document.body.className = document.body.className === "light" ? "dark" : "light";
 }
+document.addEventListener("mousemove", function (event)
+{
+    let x = event.clientX;
+    let y = event.clientY;
+    document.getElementById("mouse").innerHTML = `X = ${x}, Y = ${y}`;
+}
+);
+
+function setImage()
+{
+    let filename = document.getElementById("image-file").value;
+    console.log(filename);
+    console.log(filename.split('\\'));
+    let splitted_filename = filename.split('\\');
+    document.getElementById("photo").attributes.src = splitted_filename[splitted_filename.lenght - 1];
+}
