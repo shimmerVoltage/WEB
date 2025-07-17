@@ -68,3 +68,20 @@ img[src='img/sun.png']
     width:400px;
     height:400px;
 }
+
+#clock
+{
+    text-align: center;
+    border-top:solid 1px;
+    border-bottom:solid 1px;
+}
+    #clock h3
+    {
+        margin: 10px;
+    }
+
+input[type=checkbox]
+{
+    width:24px;
+    height:24px;
+}
