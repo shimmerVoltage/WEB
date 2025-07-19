@@ -91,3 +91,53 @@ function addLeadingZero(number)
 {
     return number < 10 ? "0" + number : number;
 }
+
+document.getElementById("btn-start").onclick = function startCountdownTimer()
+{
+    let targetDate = document.getElementById("target-date");
+    let targetTime = document.getElementById("target-time");
+    let btnStart = document.getElementById("btn-start");
+
+    targetDate.disabled = targetTime.disabled = !targetDate.disabled;
+
+    if (btnStart.value === "Start")
+    {
+        btnStart.value = "Stop";
+        tickCountDown();
+    }
+    else
+    {
+        btnStart.value = "Start";
+    }
+}
+
+function tickCountDown()
+{
+    if (!document.getElementById("target-time").disabled) return;
+    let now = new Date();
+    console.log(`now.getTimezoneOffset():\t${now.getTimezoneOffset()}`);
+    let targetDateControl = document.getElementById("target-date");
+    let targetTimeControl = document.getElementById("target-time");
+    let targetDate = targetDateControl.valueAsDate;
+    let targetTime = targetTimeControl.valueAsDate;
+
+    targetDate.setHours(targetDate.getHours() + targetDate.getTimezoneOffset()/60);
+    targetTime.setHours(targetTime.getHours() + targetTime.getTimezoneOffset()/60);
+
+    targetTime.setFullYear(targetDate.getFullYear());
+    targetTime.setMonth(targetDate.getMonth());
+    targetTime.setDate(targetDate.getDate());
+
+    let duration = targetTime - now;
+    document.getElementById("duration").innerHTML = duration;
+
+    let timestamp = Math.trunc(duration / 1000);
+    document.getElementById("timestamp").innerHTML = timestamp;
+
+    document.getElementById("target-date-value").innerHTML = targetDate;
+    document.getElementById("target-time-value").innerHTML = targetTime;
+
+    console.log(`targetTime TimezoneOffset:\t${now.getTimezoneOffset()}`);
+
+    setTimeout(tickCountDown, 100);
+}

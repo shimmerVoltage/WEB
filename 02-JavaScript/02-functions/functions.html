@@ -10,13 +10,15 @@
 </head>
 <body class="light">
     <div id="header">
-        <div style="width:88%">Header</div>
+        <div style="width:88%">
+            Header
+            <span id="mouse"></span>
+        </div>
         <label for="delay">Delay</label>
-        <input type="number" id="delay" name="delay" value="3" min="1" max="10"/>
+        <input type="number" id="delay" name="delay" value="3" min="1" max="10" />
         <div id="switchBackground" onclick="SwitchBackground()"></div>
         <!--<img src="img/moon.png" alt="Switch background image" id="switchBackground" onclick="SwitchBackground()">-->
     </div>
-    <div id="mouse"></div>
     <hr />
     <div id="full-time"></div>
     <div id="clock">
@@ -37,10 +39,34 @@
         <div>
             <input type="checkbox" name="show-date" id="show-date" />
             <label for="show-date">Показать дату</label>
-        </div>
-        <div>
             <input type="checkbox" name="show-weekday" id="show-weekday" />
             <label for="show-weekday">Показать день неделий</label>
+        </div>
+    </div>
+    <div id="countdownTime">
+        <h2>Countdown timer</h2>
+        <input type="date" id="target-date" value="2025-07-26" />
+        <input type="time" id="target-time" value="20:00" />
+        <input type="button" id="btn-start" value="Start" />
+    </div>
+    <div>
+        <div id="target-date-value"></div>
+        <div id="target-time-value"></div>
+        <div id="duration"></div>
+        <div id="timestamp"></div>
+    </div>
+    <div id="display">
+        <div class="time-block">
+            <div id="hours-unit" class="time-unit"></div>
+            <div id="hours-marker" class="time-marker">Hours</div>
+        </div>
+        <div class="time-block">
+            <div id="minutes-unit" class="time-unit"></div>
+            <div id="minutes-marker" class="time-marker">Minutes</div>
+        </div>
+        <div class="time-block">
+            <div id="seconds-unit" class="time-unit"></div>
+            <div id="seconds-marker" class="time-marker">Seconds</div>
         </div>
     </div>
     <hr />
